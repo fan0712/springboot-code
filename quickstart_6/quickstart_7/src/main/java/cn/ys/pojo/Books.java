@@ -1,0 +1,17 @@
+package cn.ys.pojo;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@ToString
+public class Books {
+    private Integer id;
+    private String bookName;
+    private Integer bookCounts;
+    private String detail;
+}

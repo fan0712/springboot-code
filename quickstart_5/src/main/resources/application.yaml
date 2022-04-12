@@ -1,0 +1,45 @@
+#全新配置文件的形式 ：yaml
+#区分大小写
+#属性和属性值之间用冒号分隔     值和冒号之间用空格分隔    层级有缩进  平级之间独立一行
+
+server:
+  port: 8080
+
+#对象
+#user:
+#  name: zhangsan
+#  age: 20
+#  school: lvzhi
+#
+##数组
+
+
+##对象数组
+#users: [{name: lisi,age: 20},{name: wangwu,age: 30}]
+#
+##日期
+#bir: 2000-08-18\
+#
+##map
+#map:
+#  k1: v1
+
+person:
+  id: 200
+  name: zhangsan
+  likes:
+    - games
+    - shopping
+    - sleep
+  email: yifan@qq.com
+
+city: 太原
+
+baseDir: /usr/local/fire
+center:
+    dataDir: ${baseDir}/data
+    tmpDir: ${baseDir}/tmp
+    logDir: ${baseDir}/log
+    msgDir: ${baseDir}/msgDir
+
+lesson: "Spring\tboot\nlesson"

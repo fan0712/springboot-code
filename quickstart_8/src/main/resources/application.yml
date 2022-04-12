@@ -1,0 +1,20 @@
+#数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ssmbuild?useSSL=false&useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#表的前缀
+  global-config:
+    db-config:
+      table-prefix: t_
+#      配置别名
+  type-aliases-package: cn.ys.pojo
+#  mapper的配置文件
+  mapper-locations: /mapper/**/*.xml
